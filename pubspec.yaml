@@ -1,0 +1,110 @@
+name: planet
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0-35.0.dev <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  awesome_dialog: ^2.1.0
+  cached_network_image: ^3.1.0
+  connectivity: ^3.0.6
+  country_pickers: ^2.0.0
+  cupertino_icons: ^1.0.2
+  curved_navigation_bar: ^1.0.1
+  dio: 4.0.0
+  equatable: ^2.0.3
+  expandable: ^5.0.1
+  country_code_picker: ^2.0.1
+  phone_number: ^0.12.0+1
+  flutter_dialogs: ^2.1.0
+  percent_indicator: ^3.0.1
+  sms_autofill: ^2.0.1
+  geocoding: ^2.0.1
+  geolocator: ^7.6.2
+  #  google_maps_flutter: ^2.0.10
+  location: ^4.3.0
+
+  flutter_bloc: ^7.3.1
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.0.0+2
+  flutter_svg: ^0.23.0+1
+  get_it: ^7.2.0
+  injectable: ^1.5.0
+  json_annotation: ^4.3.0
+  logger: ^1.1.0
+  pin_code_fields: ^7.3.0
+  pull_to_refresh: 2.0.0
+  shared_preferences: ^2.0.8
+  smooth_page_indicator: ^1.0.0+2
+  url_launcher: ^6.0.12
+  carousel_slider: ^4.0.0
+
+  floor: ^1.2.0
+  file_picker: ^4.1.6
+  open_file: ^3.2.1
+  signalr_core: ^1.1.1
+  device_info_plus: ^3.1.1
+  avatar_glow: ^2.0.2
+  google_fonts: ^2.1.0
+
+  image_picker: ^0.8.4+10
+
+
+dev_dependencies:
+  build_runner: ^2.1.4
+  floor_generator: ^1.2.0
+  change_app_package_name: ^1.0.0
+
+  flutter_launcher_icons: ^0.9.2
+  flutter_test:
+    sdk: flutter
+
+  injectable_generator: ^1.5.2
+
+  json_serializable: ^6.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_ios: "assets/images/logo.jpeg"
+  image_path_android: "assets/images/logo.jpeg"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/locales/
+
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/outfit/Outfit-Light.ttf
+        - asset: assets/fonts/outfit/Outfit-Regular.ttf
+        - asset: assets/fonts/outfit/Outfit-Medium.ttf
+        - asset: assets/fonts/outfit/Outfit-SemiBold.ttf
+        - asset: assets/fonts/outfit/Outfit-Bold.ttf
+
