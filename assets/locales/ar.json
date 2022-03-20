@@ -57,6 +57,8 @@
     "peach":"الخوخ",
     "citrus":"الحمضيات",
     "grape":"عنب",
+    "choosePlantType":"أختر نوع النبات",
+    "plantDetails":"تفاصيل النبات",
     "diseaseDetails":"تفاصيل المرض"
 
 }

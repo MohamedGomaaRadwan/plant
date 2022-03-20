@@ -11,8 +11,7 @@ class NotificationScreen extends StatelessWidget {
     return SafeArea(child: Scaffold(
       appBar: PreferredSize(
           preferredSize:Size.fromHeight(70.h),
-          child: BuildAppBar(
-            isShowNotificationIcon:false,title: AppStrings.notifications,)),
+          child: BuildAppBar(title: AppStrings.notifications,)),
       body: Column(
         children: [
 

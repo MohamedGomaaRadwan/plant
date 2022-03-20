@@ -4,9 +4,10 @@ import '../screens/activity/activity_screen.dart';
 import '../screens/auth_screen/login_screen.dart';
 import '../screens/auth_screen/sign_up_screen.dart';
 import '../screens/chat/chat_screen.dart';
-import '../screens/diesease_details_screen/diesease_details_screen.dart';
 import '../screens/home_screen/main_home.dart';
 import '../screens/notification/notification_screen.dart';
+import '../screens/plant_type_screen/plant_details_screen.dart';
+import '../screens/plant_type_screen/plant_type_screen.dart';
 import '../screens/splash_screen.dart';
 import '../resources/app_routes.dart';
 import '../resources/index.dart';
@@ -41,8 +42,12 @@ class RouteGenerator {
       case AppRoute.settings:
         return _screenInit(const SettingsScreen());
 
+
+      case AppRoute.plantDetails:
+        return _screenInit(const PlantDetailsScreen());
+
       case AppRoute.diseaseDetails:
-        return _screenInit(DiseaseDetailsScreen());
+        return _screenInit(const PlantTypeScreen());
 
       default:
         // If there is no such named route in the switch statement, e.g. /third

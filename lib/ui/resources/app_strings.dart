@@ -12,6 +12,7 @@ abstract class AppStrings {
   static const String continueWithGoogle = "continueWithGoogle";
   static const String continueWithApple = "continueWithApple";
   static const String technicalSupport = "technicalSupport";
+  static const String diseaseDetails = "diseaseDetails";
 
 
   static const String signUp = "signUp";
@@ -41,7 +42,8 @@ abstract class AppStrings {
   static const String  chat ="chat";
   static const String  welcome ="welcome";
   static const String  details ="details";
-  static const String  diseaseDetails ="diseaseDetails";
+  static const String  plantDetails ="plantDetails";
+  static const String  choosePlantType ="choosePlantType";
   static const String  appDetails ="appDetails";
   static const String  camera ="camera";
   static const String  gallery ="gallery";

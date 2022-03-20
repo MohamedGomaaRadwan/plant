@@ -15,10 +15,8 @@ class BuildAppBar extends StatelessWidget {
   BuildAppBar({
     Key? key,
     required this.title,
-    required this.isShowNotificationIcon,
     this.isHomeAppBar,
   }) : super(key: key);
-  bool isShowNotificationIcon = true;
   bool? isHomeAppBar = false;
   final String title;
   @override
@@ -39,7 +37,6 @@ class BuildAppBar extends StatelessWidget {
       elevation: 0,
       title: _buildTitle(),
       actions: [50.widthBox],
-      //actions: isShowNotificationIcon == true ? _buildIcon(context) : null,
     );
   }
 

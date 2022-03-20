@@ -56,5 +56,7 @@
   "peach":"Peach",
   "citrus":"Citrus",
   "grape":"Grape",
+  "choosePlantType":"Choose Plant Type",
+  "plantDetails":"Plant Details",
   "diseaseDetails":"Disease Details"
 }

@@ -1,8 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:planet/ui/helper/navigator.dart';
 import 'package:planet/ui/resources/app_image_paths.dart';
 import 'package:planet/ui/resources/app_palette.dart';
@@ -18,16 +15,13 @@ import '../../resources/app_routes.dart';
 import 'home_widgets/build_drawer.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  File? file;
-  String? path;
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -42,12 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   20.heightBox,
                   _buildDetails(),
-                  50.heightBox,
-                  buildFilePath(),
-                  10.heightBox,
-                  _buildCameraButton(),
-                  20.heightBox,
-                  _buildGalleryButton(),
                   20.heightBox,
                   _buildDiseaseDetailsButton(),
                   20.heightBox,
@@ -78,34 +66,13 @@ class _HomeScreenState extends State<HomeScreen> {
       child: BuildAppBar(
         isHomeAppBar: true,
         title: AppStrings.appName,
-        isShowNotificationIcon: true,
       ),
-    );
-  }
-
-  Widget buildFilePath() {
-    return file != null ? AppText(text: file!.path) : const AppText(text: '');
-  }
-
-  AppButton _buildGalleryButton() {
-    return AppButton(
-      translation: AppStrings.gallery,
-      color: AppPalette.primaryColor,
-      onTap: () => _pickImage(),
-    );
-  }
-
-  AppButton _buildCameraButton() {
-    return AppButton(
-      translation: AppStrings.camera,
-      color: AppPalette.primaryColor,
-      onTap: () => _openCamera(),
     );
   }
 
   AppButton _buildDiseaseDetailsButton() {
     return AppButton(
-      translation: AppStrings.diseaseDetails,
+      translation: AppStrings.choosePlantType,
       color: AppPalette.primaryColor,
       onTap: () => pushName(context, AppRoute.diseaseDetails),
     );
@@ -149,31 +116,5 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
     );
-  }
-
-  Future _pickImage() async {
-    try {
-      final image = await ImagePicker().pickImage(source: ImageSource.gallery);
-      if (image == null) return;
-      final imageTemp = File(image.path);
-      setState(() {
-        file = imageTemp;
-      });
-    } catch (e) {
-      debugPrint(e.toString());
-    }
-  }
-
-  Future _openCamera() async {
-    try {
-      final image = await ImagePicker().pickImage(source: ImageSource.camera);
-      if (image == null) return;
-      final imageTemp = File(image.path);
-      setState(() {
-        file = imageTemp;
-      });
-    } catch (e) {
-      debugPrint(e.toString());
-    }
   }
 }

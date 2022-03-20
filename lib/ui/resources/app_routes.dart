@@ -8,7 +8,7 @@ class AppRoute {
   static const String activity = '/activity';
   static const String discount = '/discount';
   static const String chat = '/chat';
-
+  static const String plantDetails = '/plantDetails';
   static const String settings = '/settings';
   static const String diseaseDetails = '/diseaseDetails';
 }

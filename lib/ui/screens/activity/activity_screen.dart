@@ -15,7 +15,6 @@ class PathogensScreen extends StatelessWidget {
             preferredSize: Size.fromHeight(50.h),
             child: BuildAppBar(
               title: AppStrings.pathogens,
-              isShowNotificationIcon: true,
             )),
         body: AppPadding(
           child: SingleChildScrollView(

@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:planet/ui/widgets/app_size_boxes.dart';
-
+import 'package:planet/ui/helper/navigator.dart';
+import 'package:planet/ui/resources/app_routes.dart';
 import '../../widgets/app_text_display.dart';
 
-class DiseaseDetailsItem extends StatelessWidget {
-  const DiseaseDetailsItem({
+class PlantTypeItem extends StatelessWidget {
+  const PlantTypeItem({
     Key? key,
     required this.image,
     required this.title,
@@ -14,11 +14,14 @@ class DiseaseDetailsItem extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        _buildImage(),
-        _buildTitle(),
-      ],
+    return InkWell(
+      onTap:()=>pushName(context, AppRoute.plantDetails),
+      child: Column(
+        children: [
+          _buildImage(),
+          _buildTitle(),
+        ],
+      ),
     );
   }
 

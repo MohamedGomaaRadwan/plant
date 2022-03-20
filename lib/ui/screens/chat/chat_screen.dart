@@ -16,7 +16,6 @@ class ChatScreen extends StatelessWidget {
             preferredSize: Size.fromHeight(50.h),
             child: BuildAppBar(
               title: AppStrings.chat,
-              isShowNotificationIcon: true,
             )),
         body: const AppPadding(
           child: SingleChildScrollView(
