@@ -58,5 +58,14 @@
   "grape":"Grape",
   "choosePlantType":"Choose Plant Type",
   "plantDetails":"Plant Details",
-  "diseaseDetails":"Disease Details"
+  "diseaseDetails":"Disease Details",
+
+  "plantBenefits":"Plant Benefits",
+  "compost":"Compost",
+  "plantPests":"Plant Pests",
+  "ornamentalPlant":"Ornamental Plant",
+  "farmingAdvices":"Farming Advices",
+  "fruitsPlanting":"Fruits Planting",
+  "vegetablesPlanting":"Vegetables Planting",
+  "farmingBasics":"Farming Basics"
 }

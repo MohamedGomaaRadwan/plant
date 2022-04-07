@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:planet/ui/screens/plant_guide/compost_screen/compost_screen.dart';
+import 'package:planet/ui/screens/plant_guide/farming_advice_screen/farming_advice_screen.dart';
+import 'package:planet/ui/screens/plant_guide/farming_basics_screen/farming_basics_screen.dart';
+import 'package:planet/ui/screens/plant_guide/fruit_planning_screen/fruit_planing_screen.dart';
+import 'package:planet/ui/screens/plant_guide/ornamental_plant_screen/ornamental_plant_screen.dart';
+import 'package:planet/ui/screens/plant_guide/plant_benefits_screen/plant_benefits_screen.dart';
+import 'package:planet/ui/screens/plant_guide/plant_pestes_screen/plant_pests_screen.dart';
+import 'package:planet/ui/screens/plant_guide/vegetables_planting_screen/vegetables_planting_screen.dart';
 import 'package:planet/ui/screens/settings/settings.dart';
 import '../screens/activity/activity_screen.dart';
 import '../screens/auth_screen/login_screen.dart';
@@ -48,6 +56,30 @@ class RouteGenerator {
 
       case AppRoute.diseaseDetails:
         return _screenInit(const PlantTypeScreen());
+
+      case AppRoute.plantBenefits:
+        return _screenInit(const PlantBenefits());
+
+      case AppRoute.plantPests:
+        return _screenInit(const PlantPests());
+
+      case AppRoute.ornamentalPlant:
+        return _screenInit(const OrnamentalPlant());
+
+      case AppRoute.fruitsPlanting:
+        return _screenInit(const FruitPlaning());
+
+      case AppRoute.vegetablesPlanting:
+        return _screenInit(const VegetablesPlanting());
+
+      case AppRoute.farmingBasics:
+        return _screenInit(const FarmingBasics());
+
+      case AppRoute.compost:
+        return _screenInit(const CompostScreen());
+
+      case AppRoute.farmingAdvices:
+        return _screenInit(const FarmingAdvice());
 
       default:
         // If there is no such named route in the switch statement, e.g. /third

@@ -7,6 +7,7 @@ import 'package:planet/ui/resources/app_palette.dart';
 import 'package:planet/ui/resources/app_strings.dart';
 import 'package:planet/ui/screens/activity/activity_screen.dart';
 import 'package:planet/ui/screens/home_screen/home_screen.dart';
+import 'package:planet/ui/screens/plant_guide/plant_guide_screen.dart';
 import 'package:planet/ui/screens/settings/settings.dart';
 
 class MainHome extends StatefulWidget {
@@ -20,8 +21,8 @@ class _MainHomeState extends State<MainHome> {
   int selectedIndex = 1;
   static final List<Widget> _widgetOptions = <Widget>[
     const PathogensScreen(),
-    HomeScreen(),
-    const SettingsScreen(),
+    const HomeScreen(),
+    const PlantGuide(),
   ];
 
   void _onItemTapped(int index) {

@@ -59,6 +59,14 @@
     "grape":"عنب",
     "choosePlantType":"أختر نوع النبات",
     "plantDetails":"تفاصيل النبات",
-    "diseaseDetails":"تفاصيل المرض"
+    "diseaseDetails":"تفاصيل المرض",
 
+    "plantBenefits":"فوائد النباتات",
+    "compost":"السماد",
+    "plantPests":"افات النباتات",
+    "ornamentalPlant":"نباتات الزينة",
+    "farmingAdvices":"نصائح زراعيه",
+    "fruitsPlanting":"زراعة الفاكهة",
+    "vegetablesPlanting":"زراعة الخضراوات",
+    "farmingBasics":"أساسيات الزراعة"
 }

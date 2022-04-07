@@ -60,6 +60,15 @@ abstract class AppStrings {
   static const String  citrus="citrus";
   static const String  grape="grape";
 
+  static const String  farmingAdvices="farmingAdvices";
+  static const String  compost="compost";
+  static const String  farmingBasics="farmingBasics";
+  static const String  vegetablesPlanting="vegetablesPlanting";
+  static const String  fruitsPlanting="fruitsPlanting";
+  static const String  ornamentalPlant="ornamentalPlant";
+  static const String  plantPests="plantPests";
+  static const String  plantBenefits="plantBenefits";
+
 
 
 
