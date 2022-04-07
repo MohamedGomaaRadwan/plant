@@ -20,4 +20,15 @@ class AppRoute {
   static const String farmingBasics = '/farmingBasics';
   static const String compost = '/compost';
   static const String farmingAdvices = '/farmingAdvices';
+
+  static const String whyDoIPlan = '/whyDoIPlan';
+  static const String roofPreparation = '/roofPreparation';
+
+  static const String okra = '/okra';
+  static const String onions = '/onions';
+
+  static const String guava = '/guava';
+  static const String berries = '/berries';
+
+
 }

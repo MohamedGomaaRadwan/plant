@@ -18,6 +18,10 @@ class FarmingBasics extends StatelessWidget {
         child: AppPadding(
           child: Column(
             children: [
+              _buildRoofPreparationButton(context),
+              20.heightBox,
+              _buildWhyDoIPlantButton(context),
+              20.heightBox,
 
             ],
           ),
@@ -36,4 +40,19 @@ class FarmingBasics extends StatelessWidget {
     );
   }
 
+  AppButton _buildRoofPreparationButton(context) {
+    return AppButton(
+      translation: AppStrings.roofPreparation,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.roofPreparation),
+    );
+  }
+
+  AppButton _buildWhyDoIPlantButton(context) {
+    return AppButton(
+      translation: AppStrings.whyDoIPlan,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.whyDoIPlan),
+    );
+  }
 }

@@ -69,6 +69,27 @@ abstract class AppStrings {
   static const String  plantPests="plantPests";
   static const String  plantBenefits="plantBenefits";
 
+  static const String  roofPreparation="roofPreparation";
+  static const String  roofPreparation1="roofPreparation1";
+  static const String  roofPreparation2="roofPreparation2";
+  static const String  roofPreparation3="roofPreparation3";
+  static const String  roofPreparation4="roofPreparation4";
+  static const String  roofPreparation5="roofPreparation5";
+  static const String  roofPreparation6="roofPreparation6";
+  static const String  roofPreparation7="roofPreparation7";
+
+
+  static const String  whyDoIPlan="whyDoIPlan";
+  static const String  whyDoIPlan1="whyDoIPlan1";
+  static const String  whyDoIPlan2="whyDoIPlan2";
+  static const String  whyDoIPlan3="whyDoIPlan3";
+  static const String  whyDoIPlan4="whyDoIPlan4";
+  static const String  whyDoIPlan5="whyDoIPlan5";
+  static const String  whyDoIPlan6="whyDoIPlan6";
+  static const String  whyDoIPlan7="whyDoIPlan7";
+  static const String  whyDoIPlan8="whyDoIPlan8";
+  static const String  whyDoIPlan9="whyDoIPlan9";
+
 
 
 
