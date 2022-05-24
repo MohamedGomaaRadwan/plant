@@ -7,19 +7,29 @@ import 'package:planet/ui/resources/app_strings.dart';
 import 'package:planet/ui/widgets/app_bar.dart';
 import 'package:planet/ui/widgets/index.dart';
 
-class OrnamentalPlant extends StatelessWidget {
-  const OrnamentalPlant({Key? key}) : super(key: key);
+class NPKScreen extends StatelessWidget {
+  const NPKScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:_buildAppBar(context) ,
-      body:SingleChildScrollView(
+      appBar: _buildAppBar(context),
+      body: SingleChildScrollView(
         child: AppPadding(
           child: Column(
             children: [
-              _buildAglaonema(context),
-              _buildBamboo(context)
+              AppText(
+                translation: AppStrings.aglaonema,
+              ),
+              AppText(
+                translation: AppStrings.decorationPlantsAglaonemaSuitableAtmosphere,
+              ),
+              AppText(
+                translation: AppStrings.decorationPlantsAglaonemaReproduction,
+              ),
+              AppText(
+                translation: AppStrings.decorationPlantsAglaonemaCare,
+              )
             ],
           ),
         ),
@@ -32,25 +42,10 @@ class OrnamentalPlant extends StatelessWidget {
       preferredSize: Size.fromHeight(50.h),
       child: BuildAppBar(
         isHomeAppBar: false,
-        title: AppStrings.ornamentalPlant,
+        title: AppStrings.aglaonema,
       ),
     );
   }
 
-  Widget _buildAglaonema(BuildContext context){
-    return AppButton(
-      translation: AppStrings.aglaonema,
-      color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
-    );
-  }
-
-  Widget _buildBamboo(BuildContext context){
-    return AppButton(
-      translation: AppStrings.bamboo,
-      color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
-    );
-  }
 
 }

@@ -87,60 +87,86 @@ abstract class AppStrings {
   static const String whyDoIPlan9 = "whyDoIPlan9";
 
   /// Farming Tips
-  static const String farmingTips1 = "farmingTips1"   ;
-  static const String farmingTips2 = "farmingTips2"   ;
-  static const String farmingTips3 = "farmingTips3"   ;
-  static const String farmingTips4 = "farmingTips4"   ;
-  static const String farmingTips5 = "farmingTips5"   ;
-  static const String farmingTips6 = "farmingTips6"   ;
-  static const String farmingTips7 = "farmingTips7"   ;
-  static const String farmingTips8 = "farmingTips8"   ;
-  static const String farmingTips9 = "farmingTips9"   ;
+  static const String farmingTips1 = "farmingTips1";
+
+  static const String farmingTips2 = "farmingTips2";
+
+  static const String farmingTips3 = "farmingTips3";
+
+  static const String farmingTips4 = "farmingTips4";
+
+  static const String farmingTips5 = "farmingTips5";
+
+  static const String farmingTips6 = "farmingTips6";
+
+  static const String farmingTips7 = "farmingTips7";
+
+  static const String farmingTips8 = "farmingTips8";
+
+  static const String farmingTips9 = "farmingTips9";
+
   static const String farmingTips10 = "farmingTips10";
   static const String farmingTips11 = "farmingTips11";
   static const String farmingTips12 = "farmingTips12";
 
   ///Decoration Plants
   //Aglaonema
-  static const String decorationPlantsAglaonemaName  = "decorationPlantsAglaonemaName"   ;
-  static const String decorationPlantsAglaonemaSuitableAtmosphere = "decorationPlantsAglaonemaSuitableAtmosphere";
-  static const String decorationPlantsAglaonemaReproduction = "decorationPlantsAglaonemaReproduction";
-  static const String decorationPlantsAglaonemaCare  = "decorationPlantsAglaonemaCare";
+
+  static const String aglaonema =
+      "Aglaonema";
+
+  static const String decorationPlantsAglaonemaSuitableAtmosphere =
+      "decorationPlantsAglaonemaSuitableAtmosphere";
+  static const String decorationPlantsAglaonemaReproduction =
+      "decorationPlantsAglaonemaReproduction";
+  static const String decorationPlantsAglaonemaCare =
+      "decorationPlantsAglaonemaCare";
 
   //Bamboo
-  static const String decorationPlantsBambooName  = "decorationPlantsBambooName";
-  static const String decorationPlantsBambooReproduction  = "decorationPlantsBambooReproduction";
-  static const String decorationPlantsBambooCare  = "decorationPlantsBambooCare";
+  static const String bamboo = "bamboo";
+  static const String decorationPlantsBambooReproduction =
+      "decorationPlantsBambooReproduction";
+  static const String decorationPlantsBambooCare = "decorationPlantsBambooCare";
 
   /// Plant pests
   //Old needle
 
-  static const String plantPestsOldNeedle  = "plantPestsOldNeedle";
-  static const String plantPestsOldNeedleWaysToPreventOldNeedle  = "plantPestsOldNeedleWaysToPreventOldNeedle";
+  static const String plantPestsOldNeedle = "plantPestsOldNeedle";
+  static const String oldNeedle = "oldNeedle";
+  static const String plantPestsOldNeedleWaysToPreventOldNeedle =
+      "plantPestsOldNeedleWaysToPreventOldNeedle";
 
   //Mites
-  static const String plantPestsMites     = "plantPestsMites";
-  static const String plantPestsAntiMites  = "plantPestsAntiMites";
+  static const String plantPestsMites = "plantPestsMites";
+  static const String mites = "mites";
+  static const String plantPestsAntiMites = "plantPestsAntiMites";
 
   /// Compost
   // NPK
-  static const String compostNPK          = "compostNPK";
-  static const String compostNPKNitrogen     = "compostNPKNitrogen";
-  static const String compostNPKPhosphorous      = "compostNPKPhosphorous";
-  static const String compostNPKPotassium       = "compostNPKPotassium";
 
+  static const String npk = "npk";
+  static const String compostNPK = "compostNPK";
+  static const String compostNPKNitrogen = "compostNPKNitrogen";
+  static const String compostNPKPhosphorous = "compostNPKPhosphorous";
+  static const String compostNPKPotassium = "compostNPKPotassium";
 
   //Yeast Feeding
-  static const String compostYeastFeeding                               = "compostYeastFeeding";
-  static const String compostYeastBenefits                           = "compostYeastBenefits";
-  static const String compostIsYeastIrrigationBetterOrSprinkling = "compostIsYeastIrrigationBetterOrSprinkling";
 
+  static const String yeastFeeding = "yeastFeeding";
+  static const String compostYeastFeeding = "compostYeastFeeding";
+  static const String compostYeastBenefits = "compostYeastBenefits";
+  static const String compostIsYeastIrrigationBetterOrSprinkling =
+      "compostIsYeastIrrigationBetterOrSprinkling";
 
   ///Plant benefits
- // onion
+  // onion
   static const String onion = "onion";
+  static const String onionBenefits = "onionBenefits";
   static const String plantBenefitsOnion = "plantBenefitsOnions";
+
   // dates
   static const String dates = "dates";
+  static const String datesBenefits = "datesBenefits";
+
   static const String plantBenefitsDates = "plantBenefitsDates";
 }

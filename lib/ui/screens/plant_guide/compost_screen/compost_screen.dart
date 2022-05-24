@@ -13,13 +13,11 @@ class CompostScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:_buildAppBar(context) ,
-      body:SingleChildScrollView(
+      appBar: _buildAppBar(context),
+      body: SingleChildScrollView(
         child: AppPadding(
           child: Column(
-            children: [
-
-            ],
+            children: [_buildNpk(context), _buildYeastFeeding(context)],
           ),
         ),
       ),
@@ -36,4 +34,19 @@ class CompostScreen extends StatelessWidget {
     );
   }
 
+  Widget _buildNpk(BuildContext context) {
+    return AppButton(
+      translation: AppStrings.npk,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.roofPreparation),
+    );
+  }
+
+  Widget _buildYeastFeeding(BuildContext context) {
+    return AppButton(
+      translation: AppStrings.compostYeastFeeding,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.roofPreparation),
+    );
+  }
 }

@@ -7,19 +7,23 @@ import 'package:planet/ui/resources/app_strings.dart';
 import 'package:planet/ui/widgets/app_bar.dart';
 import 'package:planet/ui/widgets/index.dart';
 
-class OrnamentalPlant extends StatelessWidget {
-  const OrnamentalPlant({Key? key}) : super(key: key);
+class MitesScreen extends StatelessWidget {
+  const MitesScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:_buildAppBar(context) ,
-      body:SingleChildScrollView(
+      appBar: _buildAppBar(context),
+      body: SingleChildScrollView(
         child: AppPadding(
           child: Column(
             children: [
-              _buildAglaonema(context),
-              _buildBamboo(context)
+              AppText(
+                translation: AppStrings.plantPestsOldNeedle,
+              ),
+              AppText(
+                translation: AppStrings.plantPestsOldNeedleWaysToPreventOldNeedle,
+              ),
             ],
           ),
         ),
@@ -32,25 +36,10 @@ class OrnamentalPlant extends StatelessWidget {
       preferredSize: Size.fromHeight(50.h),
       child: BuildAppBar(
         isHomeAppBar: false,
-        title: AppStrings.ornamentalPlant,
+        title: AppStrings.oldNeedle,
       ),
     );
   }
 
-  Widget _buildAglaonema(BuildContext context){
-    return AppButton(
-      translation: AppStrings.aglaonema,
-      color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
-    );
-  }
-
-  Widget _buildBamboo(BuildContext context){
-    return AppButton(
-      translation: AppStrings.bamboo,
-      color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
-    );
-  }
 
 }

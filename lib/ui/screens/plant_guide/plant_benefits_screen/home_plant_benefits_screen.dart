@@ -13,12 +13,13 @@ class PlantBenefits extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:_buildAppBar(context) ,
-      body:SingleChildScrollView(
+      appBar: _buildAppBar(context),
+      body: SingleChildScrollView(
         child: AppPadding(
           child: Column(
             children: [
-
+              _buildUnionBenefits(context),
+              _buildDatesBenefits(context)
             ],
           ),
         ),
@@ -33,6 +34,22 @@ class PlantBenefits extends StatelessWidget {
         isHomeAppBar: false,
         title: AppStrings.plantBenefits,
       ),
+    );
+  }
+
+  Widget _buildUnionBenefits(BuildContext context){
+    return AppButton(
+      translation: AppStrings.onionBenefits,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.roofPreparation),
+    );
+  }
+
+  Widget _buildDatesBenefits(BuildContext context){
+    return AppButton(
+      translation: AppStrings.datesBenefits,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.roofPreparation),
     );
   }
 

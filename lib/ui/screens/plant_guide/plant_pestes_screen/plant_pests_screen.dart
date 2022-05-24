@@ -18,7 +18,8 @@ class PlantPests extends StatelessWidget {
         child: AppPadding(
           child: Column(
             children: [
-
+              _buildOldNeedle(context),
+              _buildMites(context)
             ],
           ),
         ),
@@ -35,5 +36,22 @@ class PlantPests extends StatelessWidget {
       ),
     );
   }
+
+  Widget _buildOldNeedle(BuildContext context) {
+    return AppButton(
+      translation: AppStrings.plantPestsOldNeedle,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.roofPreparation),
+    );
+  }
+
+  Widget _buildMites(BuildContext context) {
+    return AppButton(
+      translation: AppStrings.mites,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.roofPreparation),
+    );
+  }
+
 
 }
