@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:planet/core/utilities/evn_variables.dart';
 
 import 'app.dart';
 import 'core/dependencies/bloc_provider.dart';
@@ -9,7 +10,7 @@ import 'core/dependencies/dependency_init.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // EnvVariables.instance().init();
+  EnvVariables.instance().init();
   // await Firebase.initializeApp();
 
   configureDependencies();

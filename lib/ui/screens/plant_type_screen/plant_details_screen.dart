@@ -50,7 +50,7 @@ class _PlantDetailsScreenState extends State<PlantDetailsScreen> {
       preferredSize: Size.fromHeight(50.h),
       child: BuildAppBar(
         isHomeAppBar: true,
-        title: AppStrings.details,
+        title: "",
       ),
     );
   }
@@ -67,7 +67,7 @@ class _PlantDetailsScreenState extends State<PlantDetailsScreen> {
     return AppButton(
       translation: AppStrings.diseaseDetails,
       color: AppPalette.primaryColor,
-      onTap: () => _pickImage(),
+      onTap: (){},
     );
   }
 
@@ -118,7 +118,8 @@ class _PlantDetailsScreenState extends State<PlantDetailsScreen> {
     );
     }
     else{
-      return Container();
+      return SizedBox(height: 200.h,
+        width: 1.sw,);
     }
   }
 

@@ -5,10 +5,9 @@ import 'package:planet/ui/localization/app_localizations.dart';
 import 'package:planet/ui/resources/app_icons.dart';
 import 'package:planet/ui/resources/app_palette.dart';
 import 'package:planet/ui/resources/app_strings.dart';
-import 'package:planet/ui/screens/activity/activity_screen.dart';
 import 'package:planet/ui/screens/home_screen/home_screen.dart';
+import 'package:planet/ui/screens/pathogens_screen/pathogens_screen.dart';
 import 'package:planet/ui/screens/plant_guide/plant_guide_screen.dart';
-import 'package:planet/ui/screens/settings/settings.dart';
 
 class MainHome extends StatefulWidget {
   const MainHome({Key? key}) : super(key: key);
@@ -43,8 +42,8 @@ class _MainHomeState extends State<MainHome> {
     return BottomNavigationBar(
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-            icon: SvgPicture.asset(AppIcons.activity, color: Colors.black,width: 30.w,height: 30.h,),
-            label: AppLocalizations.of(context).translate(AppStrings.pathogens)),
+            icon: SvgPicture.asset(AppIcons.store, color: Colors.black,width: 30.w,height: 30.h,),
+            label: AppLocalizations.of(context).translate(AppStrings.store)),
         BottomNavigationBarItem(
             icon: SvgPicture.asset(AppIcons.home, color: Colors.black,width: 30.w,height: 30.h,),
             label: AppLocalizations.of(context).translate(AppStrings.home)),

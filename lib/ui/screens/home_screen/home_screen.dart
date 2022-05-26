@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return const BoxDecoration(
       image: DecorationImage(
         image: AssetImage(AppImages.flower),
-        fit: BoxFit.cover,
+        fit: BoxFit.fill,
       ),
     );
   }
@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
       preferredSize: Size.fromHeight(50.h),
       child: BuildAppBar(
         isHomeAppBar: true,
-        title: AppStrings.appName,
+        title: AppStrings.home,
       ),
     );
   }

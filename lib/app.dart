@@ -16,40 +16,73 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // use the returned token to send messages to users from your custom server
 
-    return RefreshConfiguration(
-      headerBuilder: () => const MaterialClassicHeader(),
-      child: ScreenUtilInit(
-          designSize: const Size(360, 640),
-          builder: () {
-            return BlocBuilder<LanguageBloc, LanguageState>(
-                builder: (BuildContext context, LanguageState snapshot) {
-              return MaterialApp(
-                debugShowCheckedModeBanner: false,
-                supportedLocales: <Locale>[
-                  AppLocalizations.arLocale,
-                  AppLocalizations.enLocale
-                ],
-                locale: Locale(LanguageBloc.lang),
-                localizationsDelegates: <LocalizationsDelegate<dynamic>>[
-                  AppLocalizations.delegate,
-                  GlobalMaterialLocalizations.delegate,
-                  GlobalWidgetsLocalizations.delegate,
-                  GlobalCupertinoLocalizations.delegate,
-                  DefaultCupertinoLocalizations.delegate
-                ],
-                onGenerateRoute: RouteGenerator.generateRoute,
-                // navigatorObservers: <NavigatorObserver>[
-                //   FirebaseAnalyticsObserver(analytics: analytics),
-                // ],
-                initialRoute: AppRoute.splash,
-                theme: ThemeData(
-                  backgroundColor: AppPalette.backgroundColor,
-                  primaryColor: AppPalette.primaryColor,
-                  accentColor: AppPalette.accentColor,
-                ),
-              );
-            });
-          }),
-    );
+    return ScreenUtilInit(
+        designSize: const Size(375, 812),
+        builder: (context, _) {
+          return BlocBuilder<LanguageBloc, LanguageState>(
+              builder: (BuildContext context, LanguageState snapshot) {
+            return MaterialApp(
+              debugShowCheckedModeBanner: false,
+              supportedLocales: <Locale>[
+                AppLocalizations.arLocale,
+                AppLocalizations.enLocale
+              ],
+              locale: Locale(LanguageBloc.lang),
+              localizationsDelegates: <LocalizationsDelegate<dynamic>>[
+                AppLocalizations.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+                DefaultCupertinoLocalizations.delegate
+              ],
+              onGenerateRoute: RouteGenerator.generateRoute,
+              initialRoute: AppRoute.splash,
+              // navigatorObservers: <NavigatorObserver>[
+              //   FirebaseAnalyticsObserver(analytics: analytics),
+              // ],
+              // initialRoute: AppRoute.home,
+
+              theme: ThemeData(
+                appBarTheme:
+                    AppBarTheme(backgroundColor: AppPalette.primaryColor),
+                // backgroundColor: AppPalette.backgroundColor,
+                primaryColor: AppPalette.primaryColor,
+              ),
+            );
+          });
+        });
+    // return RefreshConfiguration(
+    //   headerBuilder: () => const MaterialClassicHeader(),
+    //   child: ScreenUtilInit(
+    //       designSize: const Size(375, 812),
+    //       builder: (context,_) {
+    //         return BlocBuilder<LanguageBloc, LanguageState>(builder: (BuildContext context, LanguageState snapshot) {
+    //           return MaterialApp(
+    //             debugShowCheckedModeBanner: false,
+    //             supportedLocales: <Locale>[AppLocalizations.arLocale, AppLocalizations.enLocale],
+    //             locale: Locale(LanguageBloc.lang),
+    //             localizationsDelegates: <LocalizationsDelegate<dynamic>>[
+    //               AppLocalizations.delegate,
+    //               GlobalMaterialLocalizations.delegate,
+    //               GlobalWidgetsLocalizations.delegate,
+    //               GlobalCupertinoLocalizations.delegate,
+    //               DefaultCupertinoLocalizations.delegate
+    //             ],
+    //             onGenerateRoute: RouteGenerator.generateRoute,
+    //             initialRoute: AppRoute.splash,
+    //             // navigatorObservers: <NavigatorObserver>[
+    //             //   FirebaseAnalyticsObserver(analytics: analytics),
+    //             // ],
+    //             // initialRoute: AppRoute.home,
+    //
+    //             theme: ThemeData(
+    //               appBarTheme: AppBarTheme(backgroundColor: AppPalette.primaryColor),
+    //               // backgroundColor: AppPalette.backgroundColor,
+    //               primaryColor: AppPalette.primaryColor,
+    //             ),
+    //           );
+    //         });
+    //       }),
+    // );
   }
 }

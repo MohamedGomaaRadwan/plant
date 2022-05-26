@@ -30,7 +30,7 @@ abstract class AppStrings {
   static const String home = "home";
   static const String settings = "settings";
   static const String agricultureGuide = "agricultureGuide";
-  static const String pathogens = "pathogens";
+  static const String store = "store";
   static const String activities = "activities";
 
   static const String rateApp = "rateApp";
@@ -102,6 +102,21 @@ abstract class AppStrings {
   static const String farmingTips7 = "farmingTips7";
 
   static const String farmingTips8 = "farmingTips8";
+  static const String  whatDoINeed="whatDoINeed";
+  static const String  toolsYouNeedToPlant="toolsYouNeedToPlant";
+  static const String  whatDoINeed1="whatDoINeed1";
+  static const String  whatDoINeed2="whatDoINeed2";
+  static const String  whatDoINeed3="whatDoINeed3";
+  static const String  whatDoINeed4="whatDoINeed4";
+  static const String  whatDoINeed5="whatDoINeed5";
+  static const String  whatDoINeed6="whatDoINeed6";
+  static const String  whatDoINeed7="whatDoINeed7";
+  static const String  whatDoINeed8="whatDoINeed8";
+  static const String  whatDoINeed9="whatDoINeed9";
+
+
+
+
 
   static const String farmingTips9 = "farmingTips9";
 

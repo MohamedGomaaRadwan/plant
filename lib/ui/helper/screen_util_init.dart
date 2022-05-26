@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ScreenInit extends StatelessWidget {
   const ScreenInit({required this.builder});
-  final Widget Function() builder;
+  final Widget Function(BuildContext context,Widget? widget) builder;
 
   @override
   Widget build(BuildContext context) {

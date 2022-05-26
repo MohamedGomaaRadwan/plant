@@ -1,6 +1,6 @@
 abstract class AppIcons{
   static const String base = "assets/icons/";
-  static const String activity = base+"activity.svg";
+  static const String store = base+"store.svg";
   static const String bike = base+"bike.svg";
   static const String gym = base+"gym.svg";
   static const String home = base+"home.svg";

@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:planet/ui/resources/app_routes.dart';
+import 'package:planet/ui/screens/pathogens_screen/pathogens_screen.dart';
+import 'package:planet/ui/screens/auth_screen/login_screen.dart';
+import 'package:planet/ui/screens/auth_screen/sign_up_screen.dart';
+import 'package:planet/ui/screens/home_screen/main_home.dart';
 import 'package:planet/ui/screens/plant_guide/compost_screen/compost_screen.dart';
 import 'package:planet/ui/screens/plant_guide/farming_advice_screen/farming_advice_screen.dart';
+import 'package:planet/ui/screens/plant_guide/farming_basics_screen/base_screen.dart';
 import 'package:planet/ui/screens/plant_guide/farming_basics_screen/farming_basics_screen.dart';
 import 'package:planet/ui/screens/plant_guide/fruit_planning_screen/fruit_planing_screen.dart';
 import 'package:planet/ui/screens/plant_guide/ornamental_plant_screen/ornamental_plant_screen.dart';
 import 'package:planet/ui/screens/plant_guide/plant_benefits_screen/home_plant_benefits_screen.dart';
 import 'package:planet/ui/screens/plant_guide/plant_pestes_screen/plant_pests_screen.dart';
 import 'package:planet/ui/screens/plant_guide/vegetables_planting_screen/vegetables_planting_screen.dart';
+import 'package:planet/ui/screens/agriculture_guide/agriculture_guide.dart';
+import 'package:planet/ui/screens/plant_type_screen/plant_details_screen.dart';
+import 'package:planet/ui/screens/plant_type_screen/plant_type_screen.dart';
 import 'package:planet/ui/screens/settings/settings.dart';
-import '../screens/activity/activity_screen.dart';
-import '../screens/auth_screen/login_screen.dart';
-import '../screens/auth_screen/sign_up_screen.dart';
-import '../screens/chat/chat_screen.dart';
-import '../screens/home_screen/main_home.dart';
-import '../screens/notification/notification_screen.dart';
-import '../screens/plant_type_screen/plant_details_screen.dart';
-import '../screens/plant_type_screen/plant_type_screen.dart';
-import '../screens/splash_screen.dart';
-import '../resources/app_routes.dart';
-import '../resources/index.dart';
+import 'package:planet/ui/screens/splash_screen.dart';
+
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -41,15 +41,11 @@ class RouteGenerator {
       case AppRoute.activity:
         return _screenInit(const PathogensScreen());
 
-      case AppRoute.notification:
-        return _screenInit(const NotificationScreen());
-
-      case AppRoute.chat:
-        return _screenInit(const ChatScreen());
-
       case AppRoute.settings:
         return _screenInit(const SettingsScreen());
 
+      case AppRoute.agricultureGuide:
+        return _screenInit(const AgricultureGuide());
 
       case AppRoute.plantDetails:
         return _screenInit(const PlantDetailsScreen());
@@ -73,7 +69,10 @@ class RouteGenerator {
         return _screenInit(const VegetablesPlanting());
 
       case AppRoute.farmingBasics:
-        return _screenInit(const FarmingBasics());
+        return _screenInit(FarmingBasicsScreen());
+
+      case AppRoute.farmingBasicsBase:
+        return _screenInit(const BaseScreen(data: [], title: '',));
 
       case AppRoute.compost:
         return _screenInit(const CompostScreen());

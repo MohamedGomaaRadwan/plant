@@ -9,7 +9,8 @@ abstract class AppImages {
 
   static const String chat = base+'mychat.jpg';
   static const String plant = base+'plant.gif';
-  static const String flower = base+'flower.png';
+  static const String flower = base+"flower.jpeg";
+  static const String plantBg = base+"bg.jpeg";
 
   static const String apple = base+'apple.png';
   static const String bellPepper = base+'bellPepper.jpg';

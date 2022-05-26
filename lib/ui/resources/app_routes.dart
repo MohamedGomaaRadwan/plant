@@ -5,11 +5,12 @@ class AppRoute {
   static const String onBoarding = '/OnBoarding';
   static const String signUp = '/SignUp';
   static const String notification = '/notification';
-  static const String activity = '/activity';
+  static const String activity = '/pathogens_screen';
   static const String discount = '/discount';
   static const String chat = '/chat';
   static const String plantDetails = '/plantDetails';
   static const String settings = '/settings';
+  static const String agricultureGuide = '/agricultureGuide';
   static const String diseaseDetails = '/diseaseDetails';
 
   static const String plantBenefits = '/plantBenefits';
@@ -18,6 +19,7 @@ class AppRoute {
   static const String fruitsPlanting = '/fruitsPlanting';
   static const String vegetablesPlanting = '/vegetablesPlanting';
   static const String farmingBasics = '/farmingBasics';
+  static const String farmingBasicsBase = '/farmingBasicsBase';
   static const String compost = '/compost';
   static const String farmingAdvices = '/farmingAdvices';
 
