@@ -19,6 +19,29 @@ class FarmingAdvice extends StatelessWidget {
         child: AppPadding(
           child: Column(
             children: [
+              AppText(translation: AppStrings.farmingTips1,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips2,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips3,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips4,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips5,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips6,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips7,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips8,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips9,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips10,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips11,),
+              10.heightBox,
+              AppText(translation: AppStrings.farmingTips12,),
 
             ],
           ),
@@ -34,6 +57,14 @@ class FarmingAdvice extends StatelessWidget {
         isHomeAppBar: false,
         title: AppStrings.farmingAdvices,
       ),
+    );
+  }
+
+  Widget _buildAdvice(BuildContext context , String title) {
+    return AppButton(
+      translation: title,
+      color: AppPalette.primaryColor,
+      onTap: () => pushName(context, AppRoute.npk),
     );
   }
 
