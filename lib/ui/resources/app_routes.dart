@@ -15,12 +15,19 @@ class AppRoute {
 
   static const String plantBenefits = '/plantBenefits';
   static const String plantPests = '/plantPests';
+  static const String benefits = '/benefits';
   static const String ornamentalPlant = '/ornamentalPlant';
   static const String fruitsPlanting = '/fruitsPlanting';
   static const String vegetablesPlanting = '/vegetablesPlanting';
   static const String farmingBasics = '/farmingBasics';
   static const String farmingBasicsBase = '/farmingBasicsBase';
   static const String compost = '/compost';
+  static const String npk = '/npk';
+  static const String yeastFeeding = '/yeastFeeding';
+  static const String aglaonema = '/aglaonema';
+  static const String bamboo = '/bamboo';
+  static const String mites = '/mites';
+  static const String oldNeedle = '/oldNeedle';
   static const String farmingAdvices = '/farmingAdvices';
 
   static const String whyDoIPlan = '/whyDoIPlan';

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:planet/ui/helper/index.dart';
 import 'package:planet/ui/helper/navigator.dart';
 import 'package:planet/ui/resources/app_palette.dart';
-import 'package:planet/ui/resources/app_routes.dart';
 import 'package:planet/ui/resources/app_strings.dart';
+import 'package:planet/ui/screens/plant_guide/plant_benefits_screen/benefits_screen.dart';
 import 'package:planet/ui/widgets/app_bar.dart';
 import 'package:planet/ui/widgets/index.dart';
 
@@ -19,6 +19,7 @@ class PlantBenefits extends StatelessWidget {
           child: Column(
             children: [
               _buildUnionBenefits(context),
+              10.heightBox,
               _buildDatesBenefits(context)
             ],
           ),
@@ -37,20 +38,26 @@ class PlantBenefits extends StatelessWidget {
     );
   }
 
-  Widget _buildUnionBenefits(BuildContext context){
+  Widget _buildUnionBenefits(BuildContext context) {
     return AppButton(
-      translation: AppStrings.onionBenefits,
-      color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
-    );
+        translation: AppStrings.onionBenefits,
+        color: AppPalette.primaryColor,
+        onTap: () => pushPage(
+            context,
+            BenefitsScreen(
+                title: AppStrings.onionBenefits,
+                content: AppStrings.plantBenefitsOnion)));
   }
 
-  Widget _buildDatesBenefits(BuildContext context){
+  Widget _buildDatesBenefits(BuildContext context) {
     return AppButton(
       translation: AppStrings.datesBenefits,
       color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
+        onTap: () => pushPage(
+            context,
+            BenefitsScreen(
+                title: AppStrings.datesBenefits,
+                content: AppStrings.plantBenefitsDates))
     );
   }
-
 }

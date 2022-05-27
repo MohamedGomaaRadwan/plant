@@ -128,7 +128,7 @@ abstract class AppStrings {
   //Aglaonema
 
   static const String aglaonema =
-      "Aglaonema";
+      "aglaonema";
 
   static const String decorationPlantsAglaonemaSuitableAtmosphere =
       "decorationPlantsAglaonemaSuitableAtmosphere";

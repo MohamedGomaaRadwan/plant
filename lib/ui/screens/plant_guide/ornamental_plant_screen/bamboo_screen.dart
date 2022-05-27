@@ -4,8 +4,8 @@ import 'package:planet/ui/resources/app_strings.dart';
 import 'package:planet/ui/widgets/app_bar.dart';
 import 'package:planet/ui/widgets/index.dart';
 
-class NPKScreen extends StatelessWidget {
-  const NPKScreen({Key? key}) : super(key: key);
+class BambooScreen extends StatelessWidget {
+  const BambooScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

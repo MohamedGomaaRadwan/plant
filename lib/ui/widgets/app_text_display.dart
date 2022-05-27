@@ -16,7 +16,7 @@ class AppText extends StatelessWidget {
     this.style,
     this.leading,
     this.softWrap = false,
-    this.maxLines = 2,
+    this.maxLines = 20,
     this.textAlign = TextAlign.start,
     this.fontWeight = FontWeight.normal,
     this.isUpper = false,

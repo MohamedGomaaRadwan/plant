@@ -19,6 +19,7 @@ class OrnamentalPlant extends StatelessWidget {
           child: Column(
             children: [
               _buildAglaonema(context),
+              10.heightBox,
               _buildBamboo(context)
             ],
           ),
@@ -41,7 +42,7 @@ class OrnamentalPlant extends StatelessWidget {
     return AppButton(
       translation: AppStrings.aglaonema,
       color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
+      onTap: () => pushName(context, AppRoute.aglaonema),
     );
   }
 
@@ -49,7 +50,7 @@ class OrnamentalPlant extends StatelessWidget {
     return AppButton(
       translation: AppStrings.bamboo,
       color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
+      onTap: () => pushName(context, AppRoute.bamboo),
     );
   }
 

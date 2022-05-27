@@ -19,6 +19,7 @@ class PlantPests extends StatelessWidget {
           child: Column(
             children: [
               _buildOldNeedle(context),
+              10.heightBox,
               _buildMites(context)
             ],
           ),
@@ -39,9 +40,9 @@ class PlantPests extends StatelessWidget {
 
   Widget _buildOldNeedle(BuildContext context) {
     return AppButton(
-      translation: AppStrings.plantPestsOldNeedle,
+      translation: AppStrings.oldNeedle,
       color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
+      onTap: () => pushName(context, AppRoute.oldNeedle),
     );
   }
 
@@ -49,7 +50,7 @@ class PlantPests extends StatelessWidget {
     return AppButton(
       translation: AppStrings.mites,
       color: AppPalette.primaryColor,
-      onTap: () => pushName(context, AppRoute.roofPreparation),
+      onTap: () => pushName(context, AppRoute.mites),
     );
   }
 

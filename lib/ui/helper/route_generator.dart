@@ -5,12 +5,16 @@ import 'package:planet/ui/screens/auth_screen/login_screen.dart';
 import 'package:planet/ui/screens/auth_screen/sign_up_screen.dart';
 import 'package:planet/ui/screens/home_screen/main_home.dart';
 import 'package:planet/ui/screens/plant_guide/compost_screen/compost_screen.dart';
+import 'package:planet/ui/screens/plant_guide/compost_screen/npk_screen.dart';
+import 'package:planet/ui/screens/plant_guide/compost_screen/yeast_feeding_screen.dart';
 import 'package:planet/ui/screens/plant_guide/farming_advice_screen/farming_advice_screen.dart';
 import 'package:planet/ui/screens/plant_guide/farming_basics_screen/base_screen.dart';
 import 'package:planet/ui/screens/plant_guide/farming_basics_screen/farming_basics_screen.dart';
 import 'package:planet/ui/screens/plant_guide/fruit_planning_screen/fruit_planing_screen.dart';
 import 'package:planet/ui/screens/plant_guide/ornamental_plant_screen/ornamental_plant_screen.dart';
+import 'package:planet/ui/screens/plant_guide/plant_benefits_screen/benefits_screen.dart';
 import 'package:planet/ui/screens/plant_guide/plant_benefits_screen/home_plant_benefits_screen.dart';
+import 'package:planet/ui/screens/plant_guide/plant_pestes_screen/old_needle_screen.dart';
 import 'package:planet/ui/screens/plant_guide/plant_pestes_screen/plant_pests_screen.dart';
 import 'package:planet/ui/screens/plant_guide/vegetables_planting_screen/vegetables_planting_screen.dart';
 import 'package:planet/ui/screens/agriculture_guide/agriculture_guide.dart';
@@ -18,6 +22,10 @@ import 'package:planet/ui/screens/plant_type_screen/plant_details_screen.dart';
 import 'package:planet/ui/screens/plant_type_screen/plant_type_screen.dart';
 import 'package:planet/ui/screens/settings/settings.dart';
 import 'package:planet/ui/screens/splash_screen.dart';
+
+import '../screens/plant_guide/ornamental_plant_screen/aglaonema_screen.dart';
+import '../screens/plant_guide/ornamental_plant_screen/bamboo_screen.dart';
+import '../screens/plant_guide/plant_pestes_screen/mites_screen.dart';
 
 
 class RouteGenerator {
@@ -76,9 +84,24 @@ class RouteGenerator {
 
       case AppRoute.compost:
         return _screenInit(const CompostScreen());
+      case AppRoute.npk:
+        return _screenInit(const NPKScreen());
+      case AppRoute.yeastFeeding:
+        return _screenInit(const YeastFeedingScreen());
 
       case AppRoute.farmingAdvices:
         return _screenInit(const FarmingAdvice());
+
+      case AppRoute.ornamentalPlant:
+        return _screenInit(const OrnamentalPlant());
+        case AppRoute.aglaonema:
+        return _screenInit(const AglaonemaScreen());
+        case AppRoute.bamboo:
+        return _screenInit(const BambooScreen());
+        case AppRoute.mites:
+        return _screenInit(const MitesScreen());
+        case AppRoute.oldNeedle:
+        return _screenInit(const OldNeedleScreen());
 
       default:
         // If there is no such named route in the switch statement, e.g. /third

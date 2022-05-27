@@ -7,8 +7,8 @@ import 'package:planet/ui/resources/app_strings.dart';
 import 'package:planet/ui/widgets/app_bar.dart';
 import 'package:planet/ui/widgets/index.dart';
 
-class MitesScreen extends StatelessWidget {
-  const MitesScreen({Key? key}) : super(key: key);
+class OldNeedleScreen extends StatelessWidget {
+  const OldNeedleScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
