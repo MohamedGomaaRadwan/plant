@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:planet/ui/helper/index.dart';
-import 'package:planet/ui/helper/navigator.dart';
-import 'package:planet/ui/resources/app_palette.dart';
-import 'package:planet/ui/resources/app_routes.dart';
 import 'package:planet/ui/resources/app_strings.dart';
 import 'package:planet/ui/widgets/app_bar.dart';
 import 'package:planet/ui/widgets/index.dart';

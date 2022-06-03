@@ -8,7 +8,7 @@ import 'package:planet/ui/screens/plant_guide/compost_screen/compost_screen.dart
 import 'package:planet/ui/screens/plant_guide/compost_screen/npk_screen.dart';
 import 'package:planet/ui/screens/plant_guide/compost_screen/yeast_feeding_screen.dart';
 import 'package:planet/ui/screens/plant_guide/farming_advice_screen/farming_advice_screen.dart';
-import 'package:planet/ui/screens/plant_guide/farming_basics_screen/base_screen.dart';
+import 'package:planet/ui/screens/plant_guide/base_screen.dart';
 import 'package:planet/ui/screens/plant_guide/farming_basics_screen/farming_basics_screen.dart';
 import 'package:planet/ui/screens/plant_guide/fruit_planning_screen/fruit_planing_screen.dart';
 import 'package:planet/ui/screens/plant_guide/ornamental_plant_screen/ornamental_plant_screen.dart';
@@ -71,10 +71,10 @@ class RouteGenerator {
         return _screenInit(const OrnamentalPlant());
 
       case AppRoute.fruitsPlanting:
-        return _screenInit(const FruitPlaning());
+        return _screenInit(FruitPlaning());
 
       case AppRoute.vegetablesPlanting:
-        return _screenInit(const VegetablesPlanting());
+        return _screenInit(VegetablesPlanting());
 
       case AppRoute.farmingBasics:
         return _screenInit(FarmingBasicsScreen());

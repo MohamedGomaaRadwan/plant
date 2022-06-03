@@ -86,40 +86,125 @@ abstract class AppStrings {
   static const String whyDoIPlan8 = "whyDoIPlan8";
   static const String whyDoIPlan9 = "whyDoIPlan9";
 
+  static const String whatDoINeed = "whatDoINeed";
+  static const String toolsYouNeedToPlant = "toolsYouNeedToPlant";
+  static const String whatDoINeed1 = "whatDoINeed1";
+  static const String whatDoINeed2 = "whatDoINeed2";
+  static const String whatDoINeed3 = "whatDoINeed3";
+  static const String whatDoINeed4 = "whatDoINeed4";
+  static const String whatDoINeed5 = "whatDoINeed5";
+  static const String whatDoINeed6 = "whatDoINeed6";
+  static const String whatDoINeed7 = "whatDoINeed7";
+  static const String whatDoINeed8 = "whatDoINeed8";
+  static const String whatDoINeed9 = "whatDoINeed9";
+
+  /// Plant Vegetables
+  //eggplant
+  static const String plantVegetables = "plantVegetables";
+
+  static const String eggplantTitle = "eggplantTitle";
+  static const String eggplant = "eggplant";
+  static const String eggplant1 = "eggplant1";
+  static const String eggplant2 = "eggplant2";
+  static const String eggplant3 = "eggplant3";
+  static const String eggplant4 = "eggplant4";
+  static const String eggplant5 = "eggplant5";
+  static const String eggplant6 = "eggplant6";
+  static const String eggplant7 = "eggplant7";
+  static const String eggplant8 = "eggplant8";
+  static const String eggplant9 = "eggplant9";
+  static const String eggplant10 = "eggplant10";
+  static const String eggplant11 = "eggplant11";
+  static const String eggplant12 = "eggplant12";
+  static const String eggplant13 = "eggplant13";
+  static const String eggplant14 = "eggplant14";
+  static const String eggplant15 = "eggplant15";
+  static const String eggplant16 = "eggplant16";
+  static const String eggplant17 = "eggplant17";
+  static const String eggplant18 = "eggplant18";
+
+  //parsley
+  static const String parsleyTitle = "parsleyTitle";
+  static const String parsley = "parsley";
+  static const String parsley1 = "parsley1";
+  static const String parsley2 = "parsley2";
+  static const String parsley3 = "parsley3";
+  static const String parsley4 = "parsley4";
+  static const String parsley5 = "parsley5";
+  static const String parsley6 = "parsley6";
+  static const String parsley7 = "parsley7";
+  static const String parsley8 = "parsley8";
+  static const String parsley9 = "parsley9";
+  static const String parsley10 = "parsley10";
+  static const String parsley11 = "parsley11";
+  static const String parsley12 = "parsley12";
+  static const String parsley13 = "parsley13";
+  static const String parsley14 = "parsley14";
+  static const String parsley15 = "parsley15";
+  static const String parsley16 = "parsley16";
+  static const String parsley17 = "parsley17";
+  static const String parsley18 = "parsley18";
+  static const String parsley19 = "parsley19";
+
+  ///
+  static const String plantFruits = "plantFruits";
+
+  static const String berriesTitle = "berriesTitle";
+  static const String berries = "berries";
+  static const String berries1 = "berries1";
+  static const String berries2 = "berries2";
+  static const String berries3 = "berries3";
+  static const String berries4 = "berries4";
+  static const String berries5 = "berries5";
+  static const String berries6 = "berries6";
+  static const String berries7 = "berries7";
+  static const String berries8 = "berries8";
+  static const String berries9 = "berries9";
+  static const String berries10 = "berries10";
+  static const String berries11 = "berries11";
+  static const String berries12 = "berries12";
+  static const String berries13 = "berries13";
+  static const String berries14 = "berries14";
+  static const String berries15 = "berries15";
+  static const String berries16 = "berries16";
+  static const String berries17 = "berries17";
+  static const String berries18 = "berries18";
+  static const String berries19 = "berries19";
+
+  //parsley
+  static const String guavaTitle = "guavaTitle";
+  static const String guava = "guava";
+  static const String guava1 = "guava1";
+  static const String guava2 = "guava2";
+  static const String guava3 = "guava3";
+  static const String guava4 = "guava4";
+  static const String guava5 = "guava5";
+  static const String guava6 = "guava6";
+  static const String guava7 = "guava7";
+  static const String guava8 = "guava8";
+  static const String guava9 = "guava9";
+  static const String guava10 = "guava10";
+  static const String guava11 = "guava11";
+  static const String guava12 = "guava12";
+  static const String guava13 = "guava13";
+  static const String guava14 = "guava14";
+  static const String guava15 = "guava15";
+  static const String guava16 = "guava16";
+  static const String guava17 = "guava17";
+  static const String guava18 = "guava18";
+
   /// Farming Tips
+
+  //eggplant
   static const String farmingTips1 = "farmingTips1";
-
   static const String farmingTips2 = "farmingTips2";
-
   static const String farmingTips3 = "farmingTips3";
-
   static const String farmingTips4 = "farmingTips4";
-
   static const String farmingTips5 = "farmingTips5";
-
   static const String farmingTips6 = "farmingTips6";
-
   static const String farmingTips7 = "farmingTips7";
-
   static const String farmingTips8 = "farmingTips8";
-  static const String  whatDoINeed="whatDoINeed";
-  static const String  toolsYouNeedToPlant="toolsYouNeedToPlant";
-  static const String  whatDoINeed1="whatDoINeed1";
-  static const String  whatDoINeed2="whatDoINeed2";
-  static const String  whatDoINeed3="whatDoINeed3";
-  static const String  whatDoINeed4="whatDoINeed4";
-  static const String  whatDoINeed5="whatDoINeed5";
-  static const String  whatDoINeed6="whatDoINeed6";
-  static const String  whatDoINeed7="whatDoINeed7";
-  static const String  whatDoINeed8="whatDoINeed8";
-  static const String  whatDoINeed9="whatDoINeed9";
-
-
-
-
-
   static const String farmingTips9 = "farmingTips9";
-
   static const String farmingTips10 = "farmingTips10";
   static const String farmingTips11 = "farmingTips11";
   static const String farmingTips12 = "farmingTips12";
@@ -127,8 +212,7 @@ abstract class AppStrings {
   ///Decoration Plants
   //Aglaonema
 
-  static const String aglaonema =
-      "aglaonema";
+  static const String aglaonema = "aglaonema";
 
   static const String decorationPlantsAglaonemaSuitableAtmosphere =
       "decorationPlantsAglaonemaSuitableAtmosphere";
@@ -136,7 +220,6 @@ abstract class AppStrings {
       "decorationPlantsAglaonemaReproduction";
   static const String decorationPlantsAglaonemaCare =
       "decorationPlantsAglaonemaCare";
-
   //Bamboo
   static const String bamboo = "bamboo";
   static const String decorationPlantsBambooReproduction =
@@ -182,6 +265,9 @@ abstract class AppStrings {
   // dates
   static const String dates = "dates";
   static const String datesBenefits = "datesBenefits";
-
   static const String plantBenefitsDates = "plantBenefitsDates";
+
+  static const String english = "English";
+  static const String arabic = "العربية";
+
 }

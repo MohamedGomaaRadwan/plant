@@ -18,7 +18,9 @@ class LoginScreen extends StatelessWidget {
   var formKey = GlobalKey<FormState>();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
-
+  SnackBar snackBar = SnackBar(
+    content:AppText(translation: AppStrings.emailNotValid,),
+  );
   @override
   Widget build(BuildContext context) {
     return
@@ -60,7 +62,12 @@ class LoginScreen extends StatelessWidget {
       translation: AppStrings.login,
       onTap: () {
         if (formKey.currentState!.validate()) {
-          pushNameReplacement(context, AppRoute.mainHome);
+          if(_emailController.text=="Mohamed.Tawfiq@gmail.com"&&_passwordController.text=='12345'){
+            pushNameReplacement(context, AppRoute.mainHome);
+          }
+          else{
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+          }
         }
       },
       color: AppPalette.primaryColor.withOpacity(.7),
@@ -91,7 +98,7 @@ class LoginScreen extends StatelessWidget {
     return AppPasswordInputField(
       hintText: AppStrings.password,
       controller: _passwordController,
-      validator: (value) => AppValidator.validatorPassword(value!, context),
+      validator: (value) => AppValidator.validatorRequired(value, context),
       style: AppTextStyles.h3.copyWith(color: Colors.white),
     );
   }

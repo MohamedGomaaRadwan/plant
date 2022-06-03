@@ -29,9 +29,8 @@ class BuildAppBar extends StatelessWidget {
               icon: LanguageBloc.lang == AppLanguages.arabic.value
                   ? const Icon(Icons.arrow_back_ios_outlined)
                   : const Icon(Icons.arrow_forward_ios_outlined),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
+              onPressed: () =>
+                  isHomeAppBar == true ? null : Navigator.of(context).pop(),
             ),
       backgroundColor: AppPalette.textWhiteColor,
       elevation: 0,

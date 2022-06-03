@@ -37,6 +37,10 @@ class BaseScreen extends StatelessWidget {
   }
 
   Widget _buildTextWidget(String text) {
-    return AppText(translation: text,overflow: TextOverflow.ellipsis,);
+    return AppPadding(
+        padding: EdgeInsets.symmetric(vertical: 12.h),
+        child: Align(
+            alignment:AlignmentDirectional.centerStart,
+            child: AppText(translation: text,overflow: TextOverflow.ellipsis,)));
   }
 }
